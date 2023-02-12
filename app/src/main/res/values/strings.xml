@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Shevtcov_Lesson_2</string>
+    <string name="on_first_activity">На первый экран</string>
+    <string name="on_second_activity">На второй экран</string>
+    <string name="Hello_World">Привет, мир!</string>
+    <string name="write_something">Напиши что-нибудь</string>
 </resources>
