@@ -19,10 +19,14 @@ class SecondActivity : AppCompatActivity() {
         val switchIntent = Intent(this, MainActivity::class.java)
         val editText = findViewById<EditText>(R.id.et_write_something)
         val text = editText.text.toString()
+        lateinit var lastEditedText: String
         if (text != null) {
             if (text.isNotEmpty())
-                switchIntent.putExtra("editedText", text)
+                lastEditedText = text
         }
+        switchIntent.putExtra("editedText", text)
+        switchIntent.putExtra("lastEditedText", lastEditedText)
+
         startActivity(switchIntent)
 
     }
